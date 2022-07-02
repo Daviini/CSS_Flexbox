@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(17, 15, 37);
+}
+.item1 { 
+  grid-area: header;
+  background-color: orangered;
+}
+.item2 { 
+  grid-area: menu;
+  background-color: orange;
+}
+.item3 { 
+  grid-area: main;
+  background-color: green; 
+}
+.item4 { 
+  grid-area: right;
+  background-color: skyblue; 
+}
+.item5 { 
+  grid-area: footer;
+  background: skyblue; 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header menu menu'
+    'header header header header menu menu'
+    'main main main right right right'
+    'main main main footer footer footer';
+  gap: 12px;
+  background-color: rgb(17, 15, 37);
+  padding: 15px;
+  margin: auto;
+  margin-top: 100px;
+  width: 600px;
+  height: 500px;
+}
+
+.grid-container > div {
+  padding: 20px 0;
+}
